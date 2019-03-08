@@ -31,3 +31,14 @@ class fraction:
         num = self.num*other.den
         den = self.den*other.num
         return fraction(num, den)
+    
+    def reduce(self):
+        a = self.num
+        b = self.den
+        while b != 0:
+            a, b = b, a % b
+        return fraction(self.num/a, self.den/a)
+
+class num2frac(fraction):
+    def __init__(self, numerator):
+        super(num2frac, self).__init__(numerator, 1)

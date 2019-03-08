@@ -14,3 +14,7 @@ frac5 = frac1 * frac2
 assert(frac5.num == 1 and frac5.den == 6)
 frac6 = frac1 / frac2
 assert(frac6.num == 3 and frac6.den == 2)
+
+frac7 = frac.fraction(12, 30)
+frac8 = frac7.reduce()
+assert(frac8.num == 2 and frac8.den == 5)
