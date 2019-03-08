@@ -1,0 +1,2 @@
+# Fraction class
+Given is a class for basic operations with fractions. Additionally it is possible to reduce the fraction by the Euklidean algorithm. In the file test_fractions.py are some tests for the fraction class.
